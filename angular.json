@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular_integration": {
+    "angular_pipedrive_bling": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/angular_integration",
+            "outputPath": "dist/angular_pipedrive_bling",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -60,10 +60,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "angular_integration:build:production"
+              "browserTarget": "angular_pipedrive_bling:build:production"
             },
             "development": {
-              "browserTarget": "angular_integration:build:development"
+              "browserTarget": "angular_pipedrive_bling:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -71,7 +71,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angular_integration:build"
+            "browserTarget": "angular_pipedrive_bling:build"
           }
         },
         "test": {
@@ -96,6 +96,6 @@
     }
   },
   "cli": {
-    "analytics": "7940f70e-380d-4b77-bf61-52717d3f2ac6"
+    "analytics": "4986e95d-9132-4145-bb95-4b7a4adae7c9"
   }
 }
