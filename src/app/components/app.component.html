@@ -1,0 +1,30 @@
+<h3>List of Deals</h3>
+
+<table>
+    <thead>
+        <tr>
+            <th>Name: </th>
+            <th>Email: </th>
+            <th>therson name: </th>
+            <th>Organization name: </th>
+            <th>Value: </th>
+            <th>Date: </th>
+            <th>Ativity: </th>
+            <th>Status: </th>
+            <th>CC Email: </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let deal of dealsData  let i = index;">
+            <td> {{ dealsData[i].name }}</td>
+            <td>{{ dealsData[i].title }}</td>
+            <td>{{ dealsData[i].person_name }}</td>
+            <td>{{ dealsData[i].org_name }}</td>
+            <td>{{ dealsData[i].value }}</td>
+            <td>{{ dealsData[i].add_time }}</td>
+            <td>{{ dealsData[i].active }}</td>
+            <td>{{ dealsData[i].status }}</td>
+            <td>{{ dealsData[i].cc_email }} </td>
+        </tr>
+    </tbody>
+</table>
