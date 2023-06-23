@@ -14,17 +14,20 @@
             <th>CC Email: </th>
         </tr>
     </thead>
-    <tbody>
-        <tr *ngFor="let deal of dealsData  let i = index;">
-            <td> {{ dealsData[i].name }}</td>
-            <td>{{ dealsData[i].title }}</td>
-            <td>{{ dealsData[i].person_name }}</td>
-            <td>{{ dealsData[i].org_name }}</td>
-            <td>{{ dealsData[i].value }}</td>
-            <td>{{ dealsData[i].add_time }}</td>
-            <td>{{ dealsData[i].active }}</td>
-            <td>{{ dealsData[i].status }}</td>
-            <td>{{ dealsData[i].cc_email }} </td>
+    <tbody *ngIf="dealsData.length > 0">
+        <tr
+            *ngFor=" let i = index; let deal of dealsData | paginate: { itemsPerPage: pageSize, currentPage: currentPage, id: 'dealsPagination' }  ">
+            <td> {{ dealsData[getRelativeIndex(i)].name }}</td>
+            <td>{{ dealsData[getRelativeIndex(i)].title }}</td>
+            <td>{{ dealsData[getRelativeIndex(i)].person_name }}</td>
+            <td>{{ dealsData[getRelativeIndex(i)].org_name }}</td>
+            <td>{{ dealsData[getRelativeIndex(i)].value }}</td>
+            <td>{{ dealsData[getRelativeIndex(i)].add_time }}</td>
+            <td>{{ dealsData[getRelativeIndex(i)].active }}</td>
+            <td>{{ dealsData[getRelativeIndex(i)].status }}</td>
+            <td>{{ dealsData[getRelativeIndex(i)].cc_email }} </td>
         </tr>
     </tbody>
 </table>
+
+<pagination-controls id="dealsPagination" (pageChange)="onPageChange($event)"></pagination-controls>
