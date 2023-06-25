@@ -1,7 +1,6 @@
-
-
 .header {
   font-size: 24px;
+  font-weight: bold;
   color: #333;
   margin-bottom: 20px;
 }
@@ -12,18 +11,21 @@
   margin-bottom: 20px;
 }
 
-.table th, .table td {
+.table th,
+.table td {
   border: 1px solid #ddd;
   padding: 8px;
   text-align: left;
 }
 
 .table tr:nth-child(even) {
-  background-color: #00cdc312; /* This is a light blue color */
+  background-color: #00cdc312;
+  /* This is a light blue color */
 
 }
 
-.no-deals, .error {
+.no-deals,
+.error {
   color: #999;
   font-size: 16px;
   text-align: center;
@@ -32,6 +34,8 @@
 .error {
   color: #f00;
 }
+
+
 
 h3 {
   font-size: 17px;
