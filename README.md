@@ -35,7 +35,7 @@ This is an application that lists business opportunities (Deals) through integra
 
 ## Screenshot
 
-![Application Screenshot](screenshot.png)
+![Application Screenshot](./src/assets/readme-image.png)
 
 ## Contribution
 
