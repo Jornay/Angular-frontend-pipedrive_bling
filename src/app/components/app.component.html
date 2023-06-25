@@ -1,34 +1,35 @@
-<h3>List of Deals</h3>
-
-<table>
-    <thead>
-        <tr>
-            <th>Name: </th>
-            <th>Email: </th>
-            <th>Person name: </th>
-            <th>Organization name: </th>
-            <th>Value: </th>
-            <th>Date: </th>
-            <th>Ativity: </th>
-            <th>Status: </th>
-            <th>CC Email: </th>
-        </tr>
-    </thead>
-    <tbody *ngIf="dealsData.length > 0">
-        <tr
-            *ngFor=" let i = index; let deal of dealsData | paginate: { itemsPerPage: pageSize, currentPage: currentPage, id: 'dealsPagination' }  ">
-            <td> {{ dealsData[getRelativeIndex(i)].name }}</td>
-            <td>{{ dealsData[getRelativeIndex(i)].title }}</td>
-            <td>{{ dealsData[getRelativeIndex(i)].person_name }}</td>
-            <td>{{ dealsData[getRelativeIndex(i)].org_name }}</td>
-            <td>{{ dealsData[getRelativeIndex(i)].value }}</td>
-            <td>{{ dealsData[getRelativeIndex(i)].add_time }}</td>
-            <td>{{ dealsData[getRelativeIndex(i)].active }}</td>
-            <td>{{ dealsData[getRelativeIndex(i)].status }}</td>
-            <td>{{ dealsData[getRelativeIndex(i)].cc_email }} </td>
-        </tr>
-    </tbody>
-</table>
+<h3 class="header">List of Deals</h3>
+<div style="overflow-x:auto;">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Name: </th>
+                <th>Email: </th>
+                <th>Person name: </th>
+                <th>Organization name: </th>
+                <th>Value: </th>
+                <th>Date: </th>
+                <th>Activity: </th>
+                <th>Status: </th>
+                <th>CC Email: </th>
+            </tr>
+        </thead>
+        <tbody *ngIf="dealsData.length > 0">
+            <tr
+                *ngFor=" let i = index; let deal of dealsData | paginate: { itemsPerPage: pageSize, currentPage: currentPage, id: 'dealsPagination' }  ">
+                <td> {{ dealsData[getRelativeIndex(i)].name }}</td>
+                <td>{{ dealsData[getRelativeIndex(i)].title }}</td>
+                <td>{{ dealsData[getRelativeIndex(i)].person_name }}</td>
+                <td>{{ dealsData[getRelativeIndex(i)].org_name }}</td>
+                <td>{{ dealsData[getRelativeIndex(i)].value }}</td>
+                <td>{{ dealsData[getRelativeIndex(i)].add_time | date:'yyyy-MM-dd' }}</td>
+                <td>{{ dealsData[getRelativeIndex(i)].active }}</td>
+                <td>{{ dealsData[getRelativeIndex(i)].status }}</td>
+                <td>{{ dealsData[getRelativeIndex(i)].cc_email }} </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 <div *ngIf="dealsData && dealsData.length === 0" class="no-deals">
     No data available.
 </div>

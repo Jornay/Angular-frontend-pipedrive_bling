@@ -11,7 +11,7 @@ export class AppComponent {
   dealsData: any = [];
   pagedDealsData: any = [];
   currentPage = 1;
-  pageSize = 10;
+  pageSize = 15;
   index = 0
 
   constructor(private dealsService: DealsService) { }
