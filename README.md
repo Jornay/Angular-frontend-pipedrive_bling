@@ -1,48 +1,52 @@
-# Aplicação de Listagem de Deals
+# Deals Listing Application
 
-Esta é uma aplicação que lista oportunidades de negócio (Deals) por meio de uma integração com um backend. Permite a visualização paginada dos dados e exibe mensagens amigáveis de sucesso ou erro.
+This is an application that lists business opportunities (Deals) through integration with a backend. It allows for paginated viewing of the data and displays user-friendly success or error messages.
 
-## Funcionalidades
+## Features
 
-- Lista as oportunidades de negócio (Deals) obtidas do backend.
-- Paginação dos resultados para facilitar a navegação pelos dados.
-- Exibe mensagens amigáveis em caso de sucesso ou erro nas operações.
+- Lists business opportunities (Deals) obtained from the backend.
+- Pagination of results for easier navigation through the data.
+- Displays user-friendly messages for success or error in operations.
 
-## Tecnologias Utilizadas
+## Technologies Used
 
-- Angular: Framework de desenvolvimento front-end.
-- TypeScript: Linguagem de programação para o desenvolvimento do frontend.
-- HTML e SCSS: Linguagens para estruturação e estilização da interface.
-- MongoDB: Banco de dados utilizado para armazenar as oportunidades de negócio.
+- Angular: Front-end development framework.
+- TypeScript: Programming language for frontend development.
+- HTML and SCSS: Languages for structuring and styling the interface.
+- MongoDB: Database used to store business opportunities.
 
-## Configuração do Ambiente
+## Environment Setup
 
-1. Certifique-se de ter o Node.js instalado em sua máquina.
-2. Clone este repositório: `git clone <URL_DO_REPOSITORIO>`.
-3. Navegue até o diretório do projeto: `cd nome-do-projeto`.
-4. Instale as dependências: `npm install`.
-5. Inicie a aplicação: `ng serve`.
-6. Acesse a aplicação no navegador: `http://localhost:4200`.
+1. Make sure you have Node.js installed on your machine.
+2. Clone this repository: `git clone <REPOSITORY_URL>`.
+3. Navigate to the project directory: `cd project-name`.
+4. Install the dependencies: `npm install`.
+5. Start the application: `ng serve`.
+6. Access the application in the browser: `http://localhost:4200`.
 
-## Estrutura do Projeto
+## Project Structure
 
-- `src/`: Contém os arquivos do código-fonte da aplicação.
-  - `app/`: Contém os componentes, serviços e outros recursos da aplicação.
-  - `assets/`: Contém arquivos estáticos, como imagens e fontes.
-  - `styles.scss`: Arquivo principal de estilos SCSS.
-  - `index.html`: Arquivo HTML principal da aplicação.
-- `package.json`: Arquivo de configuração do gerenciador de pacotes NPM.
+- `src/`: Contains the source code files of the application.
+  - `app/`: Contains the components, services, and other resources of the application.
+  - `assets/`: Contains static files such as images and fonts.
+  - `styles.scss`: Main SCSS style file.
+  - `index.html`: Main HTML file of the application.
+- `package.json`: Configuration file for the NPM package manager.
 
-## Contribuição
+## Screenshot
 
-Contribuições são bem-vindas! Se você deseja contribuir para este projeto, siga as etapas abaixo:
+![Application Screenshot](screenshot.png)
 
-1. Faça um fork do repositório.
-2. Crie uma nova branch: `git checkout -b minha-nova-feature`.
-3. Faça as alterações desejadas e commit: `git commit -m 'Adicione uma nova feature'`.
-4. Envie as alterações para o repositório remoto: `git push origin minha-nova-feature`.
-5. Crie uma pull request no repositório original.
+## Contribution
 
-## Licença
+Contributions are welcome! If you would like to contribute to this project, follow the steps below:
 
-Este projeto está licenciado sob a [MIT License](LICENSE).
+1. Fork the repository.
+2. Create a new branch: `git checkout -b my-new-feature`.
+3. Make the desired changes and commit: `git commit -m 'Add a new feature'`.
+4. Push the changes to the remote repository: `git push origin my-new-feature`.
+5. Create a pull request in the original repository.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
