@@ -5,7 +5,7 @@
         <tr>
             <th>Name: </th>
             <th>Email: </th>
-            <th>therson name: </th>
+            <th>Person name: </th>
             <th>Organization name: </th>
             <th>Value: </th>
             <th>Date: </th>
@@ -29,5 +29,12 @@
         </tr>
     </tbody>
 </table>
+<div *ngIf="dealsData && dealsData.length === 0" class="no-deals">
+    No data available.
+</div>
+
+<div *ngIf="!dealsData" class="error">
+    An error occurred while loading the data. Please try again later.
+</div>
 
 <pagination-controls id="dealsPagination" (pageChange)="onPageChange($event)"></pagination-controls>
